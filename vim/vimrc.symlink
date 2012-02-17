@@ -48,9 +48,3 @@ set backupdir=~/.vim_backup,/tmp
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-" custom syntaxes
-autocmd BufRead,BufNewFile *.jade set filetype=jade
-autocmd BufRead,BufNewFile *.less set filetype=less
-autocmd BufRead,BufNewFile *.vm set filetype=velocity
-autocmd BufRead,BufNewFile *.jspf set filetype=jsp
