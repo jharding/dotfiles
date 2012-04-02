@@ -43,8 +43,3 @@ set history=200
 set undolevels=1000
 
 set backupdir=~/.vim_backup,/tmp
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
