@@ -27,7 +27,7 @@ set ruler
 set showmode
 set showcmd
 
-" enable detection of filetypes
+" enable detection of file types
 filetype on
 filetype indent on
 filetype plugin on
@@ -39,10 +39,12 @@ set ignorecase
 set smartcase
 set showmatch
 
+" enable spell check
+setlocal spell spelllang=en_us
+set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
+
 set history=200
 set undolevels=1000
-
-set backupdir=~/.vim_backup,/tmp
 
 " localvimrc config
 let g:localvimrc_ask=0
