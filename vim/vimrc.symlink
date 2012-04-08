@@ -43,3 +43,7 @@ set history=200
 set undolevels=1000
 
 set backupdir=~/.vim_backup,/tmp
+
+" localvimrc config
+let g:localvimrc_ask=0
+let g:localvimrc_sandbox=0
