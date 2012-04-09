@@ -1,3 +1,3 @@
-# Search all files on system using locate database
 #   $1 = search term (file name)
-locate -i "$1" | grep -i --color "$1";
+
+ls -1 **/* | sed 's#.*/##' | ack "$1"
