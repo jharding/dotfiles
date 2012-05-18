@@ -1,2 +1,3 @@
---type-add=css=.less
 --type-add=jsp=.jspf
+--type-set=less=.less
+--type-set=velocity=.vm
