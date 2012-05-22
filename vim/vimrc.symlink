@@ -47,9 +47,7 @@ set nospell
 set history=200
 set undolevels=1000
 
-" highlight text when text goes over 80 column limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+set columns=80
 
 " localvimrc config
 let g:localvimrc_ask=0
