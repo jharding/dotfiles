@@ -47,8 +47,6 @@ set nospell
 set history=200
 set undolevels=1000
 
-set columns=80
-
 " localvimrc config
 let g:localvimrc_ask=0
 let g:localvimrc_sandbox=0
