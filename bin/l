@@ -1,3 +1,0 @@
-#   $1 = search term (file name)
-
-ls -1 **/* | sed 's#.*/##' | ack "$1"
