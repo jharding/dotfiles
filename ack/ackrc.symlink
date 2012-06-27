@@ -1,3 +1,6 @@
+--pager=less -r -E
+
 --type-add=jsp=.jspf
 --type-set=less=.less
 --type-set=velocity=.vm
+--type-set=mustache=.mustache
