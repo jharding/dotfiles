@@ -10,17 +10,20 @@ set nocompatible
 set autoread
 
 " indenting
-autocmd BufEnter * set nocindent 
+set nocindent 
 set autoindent
 set nosmartindent
 
 " whitespace
 set wrap
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
 
 " display
 set ruler
