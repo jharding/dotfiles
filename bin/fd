@@ -1,0 +1,8 @@
+if [ $# = 1 ]; then
+    cmd='find . -type d -iname "'$1'" | grep -is "'$1'" --color=auto'
+    eval $cmd
+else
+    echo "fd usage:"
+    echo "    fd \"<string_pattern>\""
+    echo "    note double-quotes are necessary if you have wildcards!"
+fi
