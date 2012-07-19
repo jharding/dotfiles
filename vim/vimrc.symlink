@@ -10,9 +10,9 @@ set nocompatible
 set autoread
 
 " indenting
-set nocindent 
 set autoindent
 set nosmartindent
+autocmd BufEnter * set nocindent 
 
 " whitespace
 set wrap
@@ -23,7 +23,7 @@ set smarttab
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+"set list listchars=tab:»·,trail:·
 
 " display
 set ruler
