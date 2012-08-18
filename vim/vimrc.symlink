@@ -9,6 +9,9 @@ set nocompatible
 " reads file if file has been changed
 set autoread
 
+" allow switching between buffers that contain changes 
+set hidden
+
 " indenting
 set autoindent
 set nosmartindent
@@ -42,10 +45,16 @@ set ignorecase
 set smartcase
 set showmatch
 
+let mapleader = ","
+map <Leader>t :TMiniBufExplorer<cr>
+
 " highlight the 80th column
 if exists('+colorcolumn')
     set colorcolumn=80
 endif
+
+" ctrl-p
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " enable spell check
 set spell spelllang=en_us
@@ -54,7 +63,3 @@ set nospell
 
 set history=200
 set undolevels=1000
-
-" localvimrc config
-let g:localvimrc_ask=0
-let g:localvimrc_sandbox=0
