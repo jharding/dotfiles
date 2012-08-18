@@ -1,5 +1,7 @@
 alias reload!='. ~/.zshrc'
 
+alias gg='git grep -in'
+
 alias tn='t ls +next'
 alias tq='t ls +work'
 
