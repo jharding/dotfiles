@@ -1,8 +1,0 @@
-# Lists files that contain search term
-#   $1 = search term
-#   $2 = file regex (optional)
-if [ -n "$2" ]; then
-    find . \( ! -regex '.*/\..*' \) -type f -name "$2" -exec grep -il "$1" {} \;; 
-else
-    find . \( ! -regex '.*/\..*' \) -type f -name "*" -exec grep -il "$1" {} \;;
-fi
