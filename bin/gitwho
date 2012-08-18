@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+echo "\n  File: $1";
+echo -n "  Last Commit:";
+echo -e "\033[35m \c";
+git log --relative-date --pretty='%aN (%ad)' -n1 $1;
+echo -e "\033[35m \c";
+echo -n "             - ";
+git log -n1 --format="%s" $1;
+echo -e "\n\n  By Live LOCs:\n  ------------------";
+git blame $1 | cut -d"(" -f2 | cut -d"2" -f1 | sort | uniq -c | sort -r | head -15;
+echo -e "\n  By Commits:\n  ------------------"
+git log --format='%aN' -n10000 $1 | sort | uniq -ci | sort -r | head -15;
+echo -e "\n\n";
