@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.{md,mkd,mkdn,mark*} set filetype=markdown | set colorcolumn=0
+autocmd BufNewFile,BufRead *.{md,mkd,mkdn,mark*} set filetype=markdown
