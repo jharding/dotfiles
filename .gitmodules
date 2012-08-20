@@ -16,3 +16,6 @@
 [submodule "vim/vim.symlink/bundle/webapi"]
 	path = vim/vim.symlink/bundle/webapi
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "vim/vim.symlink/bundle/minibufexpl"]
+	path = vim/vim.symlink/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git

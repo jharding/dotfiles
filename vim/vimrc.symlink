@@ -71,7 +71,8 @@ let mapleader = ","
 let localleader = "\\"
 
 " show buffers
-map <Leader>l :ls<cr>
+noremap <Leader>l :ls<cr>
+noremap <Leader>t :TMiniBufExplorer<cr>
 
 " buffers, windows, tabs
 " ======================
@@ -83,6 +84,7 @@ set autoread
 " ==============
     
 let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:miniBufExplorerMoreThanOne=3
 
 " miscellaneous
 " =============
