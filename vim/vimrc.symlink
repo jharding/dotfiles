@@ -1,3 +1,7 @@
+" basic configs
+" =============
+
+" load plugins
 call pathogen#infect()
 
 " allows for highlighting
@@ -6,16 +10,18 @@ syntax enable
 " breaks compatibility with vi
 set nocompatible
 
-" reads file if file has been changed
-set autoread
+" enable detection of file types
+filetype on
+filetype indent on
+filetype plugin on
 
-" allow switching between buffers that contain changes 
-set hidden
+" text formatting
+" ===============
 
 " indenting
 set autoindent
 set nosmartindent
-autocmd BufEnter * set nocindent 
+autocmd BufEnter * set nocindent
 
 " whitespace
 set wrap
@@ -25,41 +31,49 @@ set shiftwidth=2
 set smarttab
 set expandtab
 
-" Display extra whitespace
-"set list listchars=tab:»·,trail:·
-
 " display
 set ruler
-set showmode
 set showcmd
+set showmatch
+set number 
+set colorcolumn=80
+set wildmenu
 
-" enable detection of file types
-filetype on
-filetype indent on
-filetype plugin on
+" functional
+" ==========
 
 " search
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-set showmatch
 
-let mapleader = ","
-map <Leader>t :TMiniBufExplorer<cr>
-
-" highlight the 80th column
-if exists('+colorcolumn')
-    set colorcolumn=80
-endif
-
-" ctrl-p
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" enable spell check
+" spell check
 set spell spelllang=en_us
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 set nospell
 
 set history=200
 set undolevels=1000
+
+" mapping
+" =======
+
+" leaders
+let mapleader = ","
+let localleader = "\\"
+
+" show buffers
+map <Leader>l :ls<cr>
+
+" buffers, windows, tabs
+" ======================
+
+set hidden
+set autoread
+  
+" miscellaneous
+" =============
+
+" strip trailing whitespace for select filetypes
+autocmd BufWritePre *.js,*.rb :%s/\s\+$//e
