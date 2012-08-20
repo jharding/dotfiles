@@ -35,7 +35,8 @@ set expandtab
 set ruler
 set showcmd
 set showmatch
-set number 
+set relativenumber
+set cursorline
 set colorcolumn=80
 set wildmenu
 
