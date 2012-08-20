@@ -71,7 +71,12 @@ map <Leader>l :ls<cr>
 
 set hidden
 set autoread
-  
+
+" plugins config
+" ==============
+    
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 " miscellaneous
 " =============
 
