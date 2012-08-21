@@ -72,6 +72,7 @@ let localleader = "\\"
 
 " show buffers
 noremap <Leader>l :ls<cr>
+noremap <Leader>n :noh<cr>
 noremap <Leader>t :TMiniBufExplorer<cr>
 
 " buffers, windows, tabs
@@ -90,4 +91,4 @@ let g:miniBufExplorerMoreThanOne=3
 " =============
 
 " strip trailing whitespace for select filetypes
-autocmd BufWritePre *.js,*.rb :%s/\s\+$//e
+autocmd BufWritePre *.js,*.css,*.rb :%s/\s\+$//e
