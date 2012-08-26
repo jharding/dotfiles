@@ -1,1 +1,1 @@
-autocmd  BufNewFile,BufRead *.mustache,*.handlebars,*.hbs,*.hogan,*.hulk set filetype=mustache
+autocmd  BufNewFile,BufRead *.mustache,*.handlebars,*.hbs,*.hogan,*.hjs,*.hulk set filetype=mustache
