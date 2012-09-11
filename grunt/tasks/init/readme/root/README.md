@@ -3,6 +3,16 @@
 
 *fill me out!*
 
+Installation
+============
+
+*server side*
+
+Download
+========
+
+*client side*
+
 Usage
 =====
 
