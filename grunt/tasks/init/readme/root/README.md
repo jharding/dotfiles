@@ -48,5 +48,5 @@ For more information on semantic versioning, please visit http://semver.org/.
 License
 =======
 
-Copyright (c) {%= grunt.template.today('yyyy') %} {%= author_name %}
+Copyright (c) {%= grunt.template.today('yyyy') %} [{%= author_name %}]({%= author_url })  
 Licensed under the {%= licenses %} License.
