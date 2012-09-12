@@ -1,7 +1,7 @@
 {%= name %}
 -{%= new Array(name.length).join('-') %}
 
-*fill me out!*
+> *fill me out!*
 
 Installation
 ============
