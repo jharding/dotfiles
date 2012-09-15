@@ -1,37 +1,37 @@
 {%= name %}
--{%= new Array(name.length).join('-') %}
+={%= new Array(name.length).join('=') %}
 
 > *fill me out!*
 
 Installation
-============
+------------
 
 *server side*
 
 Download
-========
+--------
 
 *client side*
 
 Usage
-=====
+-----
 
 *fill me out!*
 
 Testing
-=======
+-------
 
 *fill me out!*
 
 Issues
-======
+------
 
 Found a bug? Create an issue on GitHub.
 
 {%= bugs %}
 
 Versioning
-==========
+----------
 
 For transparency and insight into the release cycle, releases will be numbered with the follow format:
 
@@ -46,7 +46,7 @@ And constructed with the following guidelines:
 For more information on semantic versioning, please visit http://semver.org/.
 
 License
-=======
+-------
 
-Copyright (c) {%= grunt.template.today('yyyy') %} [{%= author_name %}]({%= author_url })  
+Copyright (c) {%= grunt.template.today('yyyy') %} [{%= author_name %}]({%= author_url %})  
 Licensed under the {%= licenses %} License.
