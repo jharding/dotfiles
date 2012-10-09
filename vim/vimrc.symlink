@@ -93,4 +93,4 @@ let g:miniBufExplorerMoreThanOne=3
 " =============
 
 " strip trailing whitespace for select filetypes
-autocmd BufWritePre *.js,*.json,*.css,*.rb,*.less :%s/\s\+$//e
+autocmd BufWritePre *.js,*.json,*.css,*.scala,*.rb,*.less :%s/\s\+$//e
