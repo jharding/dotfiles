@@ -76,6 +76,7 @@ noremap <Leader>h :noh<cr>
 noremap <Leader>n :bnext<cr>
 noremap <Leader>p :bprevious<cr>
 noremap <Leader>t :TMiniBufExplorer<cr>
+noremap <Leader>ws :%s/\s\+$//e<cr>
 
 " buffers, windows, tabs
 " ======================
