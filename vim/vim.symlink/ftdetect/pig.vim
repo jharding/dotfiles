@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.pig set filetype=pig
+autocmd BufRead,BufNewFile *.pig,*.piglet set filetype=pig
