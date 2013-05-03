@@ -75,8 +75,10 @@ noremap <Leader>l :ls<cr>
 noremap <Leader>h :noh<cr>
 noremap <Leader>n :bnext<cr>
 noremap <Leader>p :bprevious<cr>
+noremap <Leader>b :NERDTreeToggle<cr>
 noremap <Leader>t :TMiniBufExplorer<cr>
 noremap <Leader>ws :%s/\s\+$//e<cr>
+noremap <Leader>. :CtrlP .<cr>
 
 " buffers, windows, tabs
 " ======================
@@ -89,6 +91,7 @@ set autoread
     
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:miniBufExplorerMoreThanOne=3
+let g:NERDTreeWinSize=50
 
 " miscellaneous
 " =============
