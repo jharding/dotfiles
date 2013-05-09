@@ -1,2 +1,2 @@
 setlocal nowrap
-setlocal colorcolumn=80,100
+setlocal colorcolumn=100
