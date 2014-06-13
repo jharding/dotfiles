@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.mesos set filetype=python
+autocmd BufNewFile,BufRead BUILD,*.mesos set filetype=python
