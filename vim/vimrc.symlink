@@ -79,6 +79,7 @@ noremap <Leader>b :NERDTreeToggle<cr>
 noremap <Leader>t :TMiniBufExplorer<cr>
 noremap <Leader>ws :%s/\s\+$//e<cr>
 noremap <Leader>. :CtrlP .<cr>
+noremap <Leader>= :Tabularize /=<cr>
 
 " buffers, windows, tabs
 " ======================
