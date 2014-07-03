@@ -11,9 +11,11 @@ then
   source ~/.localrc
 fi
 
+. <(npm completion)
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
 
 # load every completion after autocomplete loads
-for config_file ($ZSH/**/completion.sh) source $config_file
+for config_file ($ZSH/**/completion.zsh) source $config_file
